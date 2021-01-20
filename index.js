@@ -1,5 +1,5 @@
 const pi = Math.PI;
-
+const sqrt = Math.sqrt;
 class Circle {
     constructor(radius) {
         this.radius = radius;
@@ -11,7 +11,7 @@ class Circle {
         this.radius = circumference / (pi * 2)
     }
     set area(area) {
-        this.radius = Math.sqrt(area / pi)
+        this.radius = sqrt(area / pi)
     }
     get diameter() {
         return this.radius * 2
